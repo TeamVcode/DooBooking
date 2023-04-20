@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+.call-icon{
+    color:#dfa974;
+    font-size: 19px;
+    margin-right:4px;
+}
+.call{
+    padding:14px 0px 12px;
+}
+.email{
+    padding:14px 12px;
+}
+.menu{
+    padding:27px 0px;
+}
+.ullist{
+    padding:0px 0px;
+    margin:0;
+}
+.icon{
+    font-size:23px;
+    margin:0px 10px 0px 0px; 
+    
+}
+.menu li{
+    margin:0px 40px 0px 0px;
+}
