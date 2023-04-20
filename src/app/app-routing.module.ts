@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { DeluxroomComponent } from './deluxroom/deluxroom.component';
+import { RoomcataComponent } from './roomcata/roomcata.component';
+import { SuperdelComponent } from './superdel/superdel.component';
 
 const routes: Routes = [
-  {path:'header',component:HeaderComponent},
-  {path:'footer',component:FooterComponent}
+
+  {path:'',component:RoomcataComponent},
+  {path:'room',component:RoomcataComponent},
+{path:'delux',component:DeluxroomComponent},
+
+{path:'super',component:SuperdelComponent}
+
 ];
 
 @NgModule({

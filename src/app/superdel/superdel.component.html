@@ -1,0 +1,32 @@
+
+<button  routerLink="../room" style="border: none; background: transparent;font-size: 50px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+
+<h1  style="text-align:center;padding-top: 50px;font-style: italic;font-family: monospace;"> Super Delux Rooms</h1>
+
+<div  class="container px-8 p-5 " sytle="padding:150px;">
+
+<div class="row ">
+
+<div class="card  "  *ngFor="let sup of SuperDelux"  style="width:18rem;border:none">
+  <img [src]="sup.image"  class="card-img-top rounded" alt="..." style="width:300px;height:200px;float:left">
+
+<ul class="list-group list-group-flush">
+
+    <li  class="list-group-item"> <span style="font-weight: 800;font-family: 'Times New Roman', Times, serif; padding: 30px;" [ngStyle]="{color:sup.status ==='Available'?'#329431' :'#f50538'}">{{sup.status}}</span>/ <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#96bf91;font-weight:600">{{sup.money | currency :'INR'}}</span></li>
+    <li  class="list-group-item"> <span style="color:#d5a43f;font-size: 20px;font-weight: 700;font-family: monospace;">Capacity:</span>{{sup.capacity}}</li>
+    <li  class="list-group-item"> <span style="color:#d5a43f;font-size: 20px;font-weight: 700;font-family: monospace;">SIZE:</span>{{sup.size}}</li>
+    <li  class="list-group-item"> <span style="color:#d5a43f;font-size: 20px;font-weight: 700;font-family: monospace; ">BEDS:</span>{{sup.bed}}</li>
+    <li  class="list-group-item"> <span style="color:#d5a43f;font-size: 20px;font-weight: 700;font-family: monospace; ">SERVICES:</span>{{sup.services}}</li>
+
+      
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+</div>
