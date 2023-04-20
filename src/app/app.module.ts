@@ -3,25 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RoomcataComponent } from './roomcata/roomcata.component';
-import {NgImageSliderModule} from 'ng-image-slider';
-import { RoomService } from './room.service';
-import { DeluxroomComponent } from './deluxroom/deluxroom.component';
-import { SuperdelComponent } from './superdel/superdel.component';
+import { NavComponent } from './navigation/nav/nav.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './navigation/home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RoomcataComponent,
-    DeluxroomComponent,
-    SuperdelComponent
+    NavComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgImageSliderModule
+    FormsModule
   ],
-  providers: [RoomService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
