@@ -24,5 +24,24 @@
     
 }
 .menu li{
-    margin:0px 40px 0px 0px;
+    margin:0px 50px 0px 0px;
+    font-weight: 500;
+    
+    
 }
+.m{
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+}
+.mr:hover{
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+
+}
+
+
+
